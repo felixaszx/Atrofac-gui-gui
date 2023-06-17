@@ -90,7 +90,7 @@ void fc::App::init()
 
     static Flcb applied_func = [&](Fl_Widget* w)
     {
-        std::string cmd = "atrofac fan";
+        std::string cmd = "atrofac-cli fan";
         cmd += std::format(" --plan {}", curr_profile);
 
         if (ce->applied->value() == true)
